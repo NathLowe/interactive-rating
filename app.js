@@ -18,7 +18,7 @@ var validate = function (e) {
     e.preventDefault;
     var rateSelected = document.querySelector('main #rate ul li.selected');
     if (rateSelected) {
-        var rate_1 = rateSelected.getAttribute('rate');
+        var rate_1 = rateSelected.innerHTML;
         var rateSection_1 = document.querySelector('main section#rate');
         var thankSection_1 = document.querySelector('main section#thank');
         if (rateSection_1) {

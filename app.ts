@@ -23,7 +23,7 @@ let validate = (e:Event)=>{
     e.preventDefault
     let rateSelected = document.querySelector('main #rate ul li.selected')
     if(rateSelected){
-        let rate : string = rateSelected.getAttribute('rate')
+        let rate : string = rateSelected.innerHTML
         let rateSection = document.querySelector('main section#rate')
         let thankSection = document.querySelector('main section#thank')
         if(rateSection){
