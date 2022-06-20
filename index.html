@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Interactive Rating Component</title>
+    <meta name="description" content="This is a Frontend Mentor challenge. I have to create an interactive rating component closed to the design provided.">
+</head>
+<body>
+    
+    <h1 class="sr-only">Interactive Rative Componet</h1>
+
+    <!-- Start Page Content -->
+    <main>
+        <!-- Start Rating Card -->
+        <section id="rate" class="card show">
+            <header>
+                <div class="circle">
+                    <img src="./images/icon-star.svg" alt="Rating Star">
+                </div>
+            </header>
+
+            <div class="content">
+                <h2>How did we do?</h2>
+                <p>
+                    Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+                </p>
+            </div>
+
+            <ul>
+                <li class="circle" rate="1" >1</li>
+                <li class="circle" rate="2" >2</li>
+                <li class="circle" rate="3" >3</li>
+                <li class="circle" rate="4" >4</li>
+                <li class="circle" rate="5" >5</li>
+            </ul>
+
+            <button>Submit</button>
+        </section>
+        <!-- End Rating Card -->
+
+
+        <!-- Start Thank Card -->
+        <section id="thank" class="card hide">
+            <header>
+                <img src="./images/illustration-thank-you.svg" alt="Phone Illustration">
+            </header>
+
+            <div class="review">
+                You selected <span class="rate">4</span> out of 5
+            </div>
+
+            <div class="content">
+                <h2><center>Thank you!</center></h2>
+                <p style="text-align: center;" >We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+            </div>
+        </section>
+
+
+        <!-- End Thank Card -->
+    </main>
+
+
+    <!-- End Page Content -->
+
+    <script src="/app.js"></script>
+</body>
+</html>
